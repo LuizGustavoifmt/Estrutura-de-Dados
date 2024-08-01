@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required /><!DOCTYPE html>
+              <html lang="pt-br">
+                <head>
+                  <meta charset="UTF-8" />
+                  <title>Login</title>
+                  <link rel="stylesheet" href="./style.css" />
+                </head>
+                <body>
+                </body>
+              </html>
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label> <input type="checkbox" /> Remember me </label>
+              <label>
+                <a href="#">Forgot password?</a>
+              </label>
+            </div>
+            <button onclick="validateForm()">Log in</button>
+            <div class="register">
+              <p>Don't have an account ? <a href="#">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      function validateForm() {
+        const emailInput = document.querySelector('input[type="email"]');
+        const passwordInput = document.querySelector('input[type="password"]');
+        const email = emailInput.value;
+        const password = passwordInput.value;
+        const correctEmail = 'luiz';
+        const correctPassword = '123';
+
+        if (email === correctEmail && password === correctPassword) {
+          window.location.href = 'http://127.0.0.1:5501/Aula%2001%2008/login%20exemplo%20professora/index4.html'; 
+        } else {
+          alert('Email ou senha incorretos.');
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
